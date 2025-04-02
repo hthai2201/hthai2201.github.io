@@ -13,8 +13,8 @@ build:
 	@hugo -DEF --minify
 
 clear-build:
-	@rm -rf public
-	@git checkout -- public
+	@rm -rf public || true
+	@mkdir -p public
 	@rm -rf content
 
 run:
